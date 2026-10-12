@@ -21,3 +21,10 @@ Film(String titre, this.dureeMinutes) : super(titre);
 void afficherType() {
 print("Ceci est un Film : $titre ($dureeMinutes minutes).");}
 }
+void main() {
+List<Media> catalogue = [
+Livre("dart", "visual studio code"),
+Film("Titanic", 195) ];
+for (var media in catalogue) {
+media.afficherType();}
+}
